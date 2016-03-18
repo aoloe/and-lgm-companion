@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest
-    package="be.digitalia.fosdem"
+    package="org.libregraphicsmeeting.companion"
     xmlns:android="http://schemas.android.com/apk/res/android"
     android:installLocation="auto">
 
@@ -18,7 +18,7 @@
         android:required="false"/>
 
     <application
-        android:name="be.digitalia.fosdem.FosdemApplication"
+        android:name=".LGMApplication"
         android:allowBackup="true"
         android:hardwareAccelerated="true"
         android:icon="@mipmap/ic_launcher"
@@ -56,7 +56,7 @@
 
                 <category android:name="android.intent.category.DEFAULT"/>
 
-                <data android:mimeType="application/be.digitalia.fosdem"/>
+                <data android:mimeType="application/org.libregraphicsmeeting.companion"/>
             </intent-filter>
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
@@ -104,7 +104,7 @@
 
         <provider
             android:name=".providers.SearchSuggestionProvider"
-            android:authorities="be.digitalia.fosdem.search"
+            android:authorities="org.libregraphicsmeeting.companion.search"
             android:exported="true"/>
     </application>
 

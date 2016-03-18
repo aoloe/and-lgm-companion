@@ -5,7 +5,7 @@ android {
     buildToolsVersion "23.0.2"
 
     defaultConfig {
-        applicationId "be.digitalia.fosdem"
+        applicationId "org.libregraphicsmeeting.companion"
         minSdkVersion 7
         targetSdkVersion 23
         versionCode 700136
